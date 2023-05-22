@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+
+#wpwrap{
+    display: flex;
+    flex-direction: column;
+}
+
+#wpcontent{
+    min-height: 1px;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+#wpbody{
+    min-height: 1px;
+    flex: auto;
+    background: #2B2B2B;
+    color: #fff;
+    padding: 30px;
+    font-family: 'Numans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    position: relative;
+}
+
+#wpbody a{
+    color: #FF5938;
+}
+
+#wpbody a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+#wpbody h2,
+#wpbody h3{
+    color: #fff;
+}
+
+#setting-error-getsnap_activation_code_error{
+    margin: 0 0 30px !important;
+    color: #d63638;
+}
+
+#setting-error-settings_updated{
+    margin: 0 0 30px !important;
+    color: green;
+}
+
+.notice.notice-info.is-dismissible{
+    margin: 0 0 30px !important;
+    color: #72aee6;
+}
+
+div.getsnap-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+div.getsnap-container .descr{
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+div.getsnap-container label{
+    display: block;
+}
+
+div.getsnap-container input[name="getsnap_activation_code"]{
+    height: 60px;
+    width: 400px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 50px;
+    padding: 0 30px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+p.submit{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+p.submit input#submit{
+    height: 50px;
+    background: #FF5938;
+    color: #fff;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 0;
+    border-radius: .21em;
+    font-size: 16px;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+p.submit input#submit:hover{
+    background: #FF2A00;
+}
+
+div.getsnap-container-media{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    max-width: 70%;
+}
+
+div.getsnap-container-media img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 782px){
+
+    #wpbody{
+        padding-top: 90px;
+    }
+
+    .auto-fold #wpcontent{
+        padding-left: 0;
+    }
+
+    .wp-responsive-open #wpbody {
+        right: -12em;
+    }
+
+    div.getsnap_activation-cotnainer{
+        max-width: 100vw;
+        padding: 0 30px !important;
+        box-sizing: border-box;
+    }
+
+}
